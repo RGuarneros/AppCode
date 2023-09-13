@@ -1,3 +1,8 @@
+// Names:
+//   Richard Guarneros
+//   Nathaniel Beasley
+//   Jeremiah Do
+
 #include <iostream>
 
 using std::cout;
