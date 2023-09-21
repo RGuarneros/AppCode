@@ -39,19 +39,24 @@ public:
             lastprime++;
         }
 
+        // store prime to manipulate
         int prime = lastprime;
+        //move one up and down
         int bottomprime = prime - 1;
         int topprime = prime + 1;
+        //set a bool to break out of the loop later
         bool equidistance= true;
 
-
+        //check every vcalue and break within the function
             while (equidistance) {
+                //if both prime, no need to iterate more
                 if (isprime(bottomprime) && isprime(topprime)) {
                     cout << "Bottom Prime: " << bottomprime << endl;
                     cout << "Top Prime: " << topprime << endl;
                     equidistance = false; // Exit the loop when both adjacent primes are found
                 }
                 else {
+                    //change range
                     bottomprime--;
                     topprime++;
                 }
