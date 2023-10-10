@@ -46,6 +46,9 @@ public:
         return lastprime;
        
     }
+    void restart() {
+        lastprime = 1;
+    }
 };
 
 class evengenerator {
@@ -55,35 +58,21 @@ public:
     int nexteven() {
         return evennum = evennum + 2;
     }
-    //int lowerbound(even) {
-    //    primegenerator number;
-    //    number.nextprime();
-    //}
-
 };
 
 int main() {
     int nprimes;
     cin >> nprimes;
     primegenerator sequence;
-    primegenerator extra;
-
-    //while (sequence.number_of_primes_found() < nprimes) {
-    //    int evennumber = evensequence.nexteven();
-    //    cout << evennumber << endl;
-    //    int number = sequence.nextprime();
-    //    cout << "Number " << number << " is prime" << '\n';
-    //    cout << " " << endl;
-    //}
-
-    for (int evennum = 4; evennum <= nprimes; evennum=evennum+2){
+    int evennum = 4;
+    while (evennum <= nprimes){
         int prime_p = sequence.nextprime();
         int q = evennum - prime_p;
         if (isprime(q)) {
-            primegenerator sequence_q;
             cout << prime_p << " + " << q << " = " << evennum << endl;
+            sequence.restart();
+        evennum = evennum + 2;
         }
-        
     }
     return 0;
 }
