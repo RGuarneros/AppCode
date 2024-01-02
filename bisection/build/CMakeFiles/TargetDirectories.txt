@@ -1,3 +1,0 @@
-/home/guarneros/coe322fall2023/skeletons/bisection/build/CMakeFiles/rebuild_cache.dir
-/home/guarneros/coe322fall2023/skeletons/bisection/build/CMakeFiles/edit_cache.dir
-/home/guarneros/coe322fall2023/skeletons/bisection/build/CMakeFiles/zerotest.dir
